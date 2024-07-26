@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="febrownbag.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="FE Brownbag"
+        class="sapUiContentPadding"
+    >
+
+
+        <content>
+            <!-- <mvc:XMLView viewName="febrownbag.view.ButtonPanels" /> -->
+
+            <mvc:XMLView viewName="febrownbag.view.ButtonPanels"></mvc:XMLView>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,49 @@
+<mvc:View
+    controllerName="febrownbag.controller.ButtonPanels"
+        xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+>
+    <Button
+        id="button"
+        text="Click Me!"
+        press="onButtonPress"
+        class="sapUiSmallMarginBottom"
+    />
+
+    <Panel
+        id="i18nPanel"
+        headerText="{i18n>panelHeaderText}"
+        expandable="true"
+    >
+        <form:SimpleForm
+            id="from"
+            editable="true"
+            layout="ColumnLayout"
+        >
+            <Label text="{i18n>firstName}" />
+            <Input
+                value="{/firstName}"
+                valueLiveUpdate="true"
+                width="200px"
+                enabled="{/enabled}"
+            />
+
+            <Label text="{i18n>lastName}" />
+            <Input
+                value="{/lastName}"
+                valueLiveUpdate="true"
+                width="200px"
+                enabled="{/enabled}"
+            />
+
+            <Label text="{i18n>enabled}" />
+            <CheckBox selected="{/enabled}" />
+        </form:SimpleForm>
+    </Panel>
+    <Text
+        text="Hallo, World"
+        class="halloText"
+    />
+</mvc:View>
